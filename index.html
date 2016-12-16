@@ -19,9 +19,35 @@
         width: 1024px;
       }
     </style>
+
+    <script type="text/javascript">
+    function init() {
+      var levels = ['a bad-ass', 'an ultra cool', 'an awesome', 'a killer'];
+      var types = ['rockstar', 'ninja', 'developer', 'hipster'];
+      var time = ['today', 'tomorrow', 'the day before tomorrow'];
+      document.querySelector('.page-header__level').innerText = randFromArray(levels);
+      document.querySelector('.page-header__type').innerText = randFromArray(types);
+      document.querySelector('.page-header__time').innerText = randFromArray(time);
+    }
+
+    function randFromArray(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+    </script>
+
   </head>
-  <body>
-    <h1>Heading</h1>
-    <p>Some regular text.</p>
+  <body onload="init()">
+    <h1 class="page__header">Be <span class="page-header__level"></span> <span class="page-header__type"></span> <span class="page-header__time"></span>!</h1>
+
+    <article class="article">
+      <header class="article-header">
+        <h1 class="article-header__heading"></h1>
+      </header>
+
+      <div class="article-content">
+        <p class="article-content__paragraph">
+        </p>
+      </div>
+
   </body>
 </html>
