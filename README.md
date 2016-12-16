@@ -1,9 +1,9 @@
-# React bootstrap
+# Hip list
 
-npm install
+`npm install / yarn install`
 
-npm run server
+`npm run dev`
 
-npm run dev
+`npm run build`
 
-npm run build
+`npm run build-prod`
