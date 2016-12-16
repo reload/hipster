@@ -1,0 +1,31 @@
+.content-list-item {
+  margin: $spacing-default 0;
+
+  &__link-wrapper {
+    display: block;
+    overflow: auto;
+    padding: $spacing-default;
+
+    &:hover {
+      background-color: rgba(black, 0.1);
+    }
+  }
+
+  &__image {
+    float: left;
+    margin: -$spacing-default;
+    margin-right: $spacing-default;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__title {
+    @include heading;
+  }
+
+  &__description {
+    margin: $spacing-small 0;
+  }
+}

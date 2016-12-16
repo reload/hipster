@@ -1,53 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hipster!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Yantramanav:100" rel="stylesheet">
-    <style>
-      h1, h2, h3, h4, h5, h6 {
-        font-family: "Fredoka one";
-      }
-      body {
-        background-color: darkGoldenRod;
-        color: white;
-        font-family: "Yantramanav";
-        font-size: 20px;
-        margin: 2em auto;
-        text-shadow: 0 0 20px black;
-        width: 1024px;
-      }
-    </style>
-
-    <script type="text/javascript">
-    function init() {
-      var levels = ['a bad-ass', 'an ultra cool', 'an awesome', 'a killer'];
-      var types = ['rockstar', 'ninja', 'developer', 'hipster'];
-      var time = ['today', 'tomorrow', 'the day before tomorrow'];
-      document.querySelector('.page-header__level').innerText = randFromArray(levels);
-      document.querySelector('.page-header__type').innerText = randFromArray(types);
-      document.querySelector('.page-header__time').innerText = randFromArray(time);
-    }
-
-    function randFromArray(arr) {
-      return arr[Math.floor(Math.random() * arr.length)];
-    }
-    </script>
-
-  </head>
-  <body onload="init()">
-    <h1 class="page__header">Be <span class="page-header__level"></span> <span class="page-header__type"></span> <span class="page-header__time"></span>!</h1>
-
-    <article class="article">
-      <header class="article-header">
-        <h1 class="article-header__heading"></h1>
-      </header>
-
-      <div class="article-content">
-        <p class="article-content__paragraph">
-        </p>
-      </div>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Hipster</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300|VT323" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+  <div id="app" class="page"></div>
+  <script src="public/js/bundle.js" type="text/javascript"></script>
+</body>
 </html>

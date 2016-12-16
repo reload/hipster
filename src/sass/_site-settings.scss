@@ -1,0 +1,23 @@
+// Palette.
+$grain: rgb(215, 206, 199);
+$blackBoard: rgb(86, 86, 86);
+$oxBlood: rgb(118, 50, 63);
+$tan: rgb(192, 159, 128);
+
+// Colors.
+$bgColor: $grain;
+$fgColor: $blackBoard;
+$headingColor: $oxBlood;
+$linkColor: $oxBlood;
+
+// Typo.
+$base-font-size: 1.2rem;
+$base-font-stack: 'Ubuntu', sans-serif;
+$heading-font-stack: 'VT323', monospace;
+
+
+// Size.
+$wrapper-width: 1040px;
+$spacing-default: 1rem;
+$spacing-small: $spacing-default / 2;
+$spacing-large: $spacing-default * 2;

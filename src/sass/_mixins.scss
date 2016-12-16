@@ -1,0 +1,7 @@
+// Headings.
+@mixin heading {
+  font-family: $heading-font-stack;
+  color: $headingColor;
+  font-size: 2rem;
+  line-height: 1;
+}

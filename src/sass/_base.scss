@@ -1,0 +1,30 @@
+body {
+  background-color: $bgColor;
+  color: $fgColor;
+  font-family: $base-font-stack;
+  font-size: $base-font-size;
+  margin: $spacing-default auto;
+  max-width: $wrapper-width;
+  padding: $spacing-default
+}
+
+a {
+  color: $oxBlood;
+  text-decoration: none;
+
+  * {
+    color: $fgColor;
+  }
+}
+
+.site-name {
+  @include heading;
+  font-size: 5rem;
+  margin-bottom: $spacing-large;
+
+  &:before,
+  &:after {
+    content: '\1F354';
+    margin: 0 $spacing-small;
+  }
+}
